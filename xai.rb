@@ -5,11 +5,11 @@
 class Xai < Formula
   desc ""
   homepage "https://github.com/11301858/XAISuite"
-  version "2.0.6"
+  version "2.0.7"
 
   on_macos do
-    url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.6/xaisuitecli_2.0.6_darwin_all.tar.gz"
-    sha256 "9d77090b7fc2f493a0d0243d036718fbc2aa445106540d4f8dbb0841dbe76500"
+    url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.7/xaisuitecli_2.0.7_darwin_all.tar.gz"
+    sha256 "2b039236a9fd83423890c003fc5c503c8861c1fa995c63d41b8abcd80c1c1ddb"
 
     def install
       bin.install "xaisuitecli"
@@ -18,16 +18,16 @@ class Xai < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.6/xaisuitecli_2.0.6_linux_arm64.tar.gz"
-      sha256 "52b7c9c9ea402dc18c8ad3fd81d20ec1e2f48db63f3de4e71a79acc27fea2bb5"
+      url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.7/xaisuitecli_2.0.7_linux_arm64.tar.gz"
+      sha256 "20467d22e77a04f734b724b0320bd3893f08252e536b0d51ebb8a40c5ad14a92"
 
       def install
         bin.install "xai"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.6/xaisuitecli_2.0.6_linux_amd64.tar.gz"
-      sha256 "52df1ff009c05087e3d855bd921b7df1c1bafacad262308f8ea4d8b2fd549944"
+      url "https://github.com/11301858/xaisuitecli/releases/download/v2.0.7/xaisuitecli_2.0.7_linux_amd64.tar.gz"
+      sha256 "b4a7e655a57af592fa8532966a5d1e7e110ce24cbcabb0f9d533daec495a258b"
 
       def install
         bin.install "xai"
